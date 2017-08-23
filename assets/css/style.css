@@ -1,0 +1,46 @@
+body {
+	background-color: #eee;
+}
+
+#content {
+	display: flex;
+	flex-direction: row-reverse;
+	height: 100vh;
+}
+
+header {
+	background-color: #232323;
+}
+
+#buttons button {
+	margin: 5px;
+}
+
+#gifs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 75%;
+}
+
+#form_holder {
+	float: right;
+	width: 25%;
+	background-color: white;
+}
+
+form {
+	margin: 30px;
+}
+
+.gif {
+	margin: 5px;
+	padding: 5px;
+	box-shadow: 4px 4px 11px 0px rgba(170,170,170,1);
+	background-color: white;
+}
+
+button {
+
+}
+
