@@ -1,19 +1,21 @@
 body {
 	background-color: #eee;
+	font-family: 'Roboto', sans-serif;
 }
 
 #content {
 	display: flex;
 	flex-direction: row-reverse;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 header {
 	background-color: #232323;
+	padding: 2px;
 }
 
 #buttons button {
-	margin: 5px;
+	margin: 2px 4px 2px 4px;
 }
 
 #gifs {
@@ -21,26 +23,67 @@ header {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 75%;
+	border-right: 1px solid #232323;
+	padding: 2px;
 }
 
 #form_holder {
 	float: right;
 	width: 25%;
 	background-color: white;
+	overflow: auto;
+	min-width: 300px;
 }
 
 form {
 	margin: 30px;
 }
 
-.gif {
+form label {
+	color: #232323;
+	font-size: 1.2em;
+}
+
+form input[type=text] {
+	width: 230px;
+	height: 24px;
+	font-family: inherit;
+	font-size: 1em;
+	color: #232323;
+	margin-top: 6px;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+}
+
+#submit {
+	margin-top: 6px;
+	box-shadow: 1px 1px 8px 0px rgba(190,190,190,1);
+}
+
+.gif-holder {
 	margin: 5px;
 	padding: 5px;
 	box-shadow: 4px 4px 11px 0px rgba(170,170,170,1);
 	background-color: white;
 }
 
-button {
+.rating {
+	font-size: 1.5em;
+	color: #232323;
+}
 
+.rating-label {
+	font-weight: 500;
+	color: #232323;
+}
+
+button {
+	background-color: #40b766;
+	border-radius: 2px;
+	color: white;
+	border: none;
+	font-size: 1em;
+	/*padding: 2px 4px 2px 4px;*/
+	font-family: inherit;
 }
 
