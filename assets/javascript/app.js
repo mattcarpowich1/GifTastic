@@ -1,7 +1,7 @@
 $(function() {  
 
   //initial array for names of buttons
-  var topics = ["dog", "cat", "mouse", "eagle", "octopus", "ostrich", "goose", "snake"];
+  var topics = ["dog", "cat", "bunny", "guinea pig", "iguana", "parrot", "tarantula", "horse", "pet monkey", "snake", "goldfish"];
 
   //dynamically create buttons from array
   for (var i = 0; i < topics.length; i++) {
@@ -42,6 +42,7 @@ $(function() {
         //url's for both paused and playing gif
         var gifPausedURL = response.data[i].images.fixed_height_still.url;
         var gifPlayURL = response.data[i].images.fixed_height.url;
+        
         var ratingData = response.data[i].rating;
 
         var $gifHolder = $("<div>");
@@ -91,6 +92,10 @@ $(function() {
       event.preventDefault();
 
       var value = $("input").val();
+
+      if (value.length < 1) {
+        return false;
+      }
 
       var $newButton = $("<button>");
       $newButton.text(value);
