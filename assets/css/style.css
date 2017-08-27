@@ -25,6 +25,7 @@ header {
 	width: 75%;
 	border-right: 1px solid #232323;
 	padding: 2px;
+	padding-right: 25px;
 }
 
 #form_holder {
